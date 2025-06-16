@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface QuestionRepository extends GenericRepository<Question> {
 
-    List<Question> findByQcmId(long idQcm, Pageable pageable);
+    List<Question> findByQcmId(long idQcm, Pageable page);
 
 }

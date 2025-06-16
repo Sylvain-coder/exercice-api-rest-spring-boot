@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface QcmRepository extends GenericRepository<Qcm> {
 
-    List<Qcm> findByCategorieNom(String nom, Pageable pageable);
+    List<Qcm> findByCategorieNom(String nom, Pageable page);
 
-    List<Qcm> findByUtilisateurId(long userId, Pageable pageable);
+    List<Qcm> findByUtilisateurId(long userId, Pageable page);
 
 }

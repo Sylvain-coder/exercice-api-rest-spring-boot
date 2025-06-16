@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface CategorieRepository extends GenericRepository<Categorie> {
 
-    List<Categorie> findByParentId(long idParent, Pageable pageable);
+    List<Categorie> findByParentId(long idParent, Pageable page);
 
     List<Categorie> findByNom(String nom);
 
