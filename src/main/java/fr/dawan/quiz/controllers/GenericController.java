@@ -1,6 +1,7 @@
 package fr.dawan.quiz.controllers;
 
 import fr.dawan.quiz.services.GenericService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -32,13 +33,13 @@ public abstract class GenericController<TDto> {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public TDto create(@RequestBody TDto marque) {
-        return service.create(marque);
+    public TDto create(@Valid @RequestBody TDto dto) {
+        return service.create(dto);
     }
 
     @PutMapping(value = "/{id:[0-9]+}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public TDto update(@RequestBody TDto marque, @PathVariable long id) {
-        return service.update(marque, id);
+    public TDto update(@Valid @RequestBody TDto dto, @PathVariable long id) {
+        return service.update(dto, id);
     }
 
 }
