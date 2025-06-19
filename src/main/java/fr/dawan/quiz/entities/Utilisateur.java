@@ -15,7 +15,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "utilisateurs")
-public class Utilisateur extends BaseEntity {
+public class Utilisateur extends BaseAuditing {
 
     private static final long serialVersionUID = 1L;
 

@@ -26,7 +26,7 @@ public class UtilisateurServiceImpl extends GenericServiceImpl<Utilisateur, Util
 
     @Override
     public UtilisateurDto getByEmail(String email) {
-        return repository.findByEmail(email).map(mapper::toDto).orElseThrow(() -> new EmailNotFoundException("L'email : " + email + " n'existe pas"));
+        return mapper.toDto(repository.findByEmail(email).orElseThrow(() -> new EmailNotFoundException("L'email : " + email + " n'existe pas")));
     }
 
 }
