@@ -1,0 +1,13 @@
+${AnsiColor.BRIGHT_WHITE}${AnsiStyle.BOLD}
+${AnsiBackground.RED}                                      ${AnsiBackground.DEFAULT}
+${AnsiBackground.RED}   _____                              ${AnsiBackground.DEFAULT}
+${AnsiBackground.RED}  |  __ \                             ${AnsiBackground.DEFAULT}
+${AnsiBackground.RED}  | |  | | __ ___      ____ _ _ __    ${AnsiBackground.DEFAULT}
+${AnsiBackground.RED}  | |  | |/ _` \ \ /\ / / _` | '_ \   ${AnsiBackground.DEFAULT}
+${AnsiBackground.RED}  | |__| | (_| |\ V  V / (_| | | | |  ${AnsiBackground.DEFAULT}
+${AnsiBackground.RED}  |_____/ \__,_| \_/\_/ \__,_|_| |_|  ${AnsiBackground.DEFAULT}
+${AnsiBackground.RED}                                      ${AnsiBackground.DEFAULT}
+
+Application: ${spring.application.name}
+Spring Boot version: ${spring-boot.formatted-version}
+${AnsiStyle.NORMAL}${AnsiColor.DEFAULT}
