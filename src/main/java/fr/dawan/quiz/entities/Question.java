@@ -32,7 +32,7 @@ public class Question extends BaseEntity {
     @ManyToOne
     private Qcm qcm;
 
-    @OneToMany(mappedBy = "question")
+    @OneToMany(mappedBy = "question", cascade = CascadeType.ALL)
     private Set<Reponse> reponses = new HashSet<>();
 
 

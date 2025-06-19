@@ -36,7 +36,7 @@ public class Qcm extends BaseEntity {
     @ManyToOne
     private Categorie categorie;
 
-    @OneToMany(mappedBy = "qcm")
+    @OneToMany(mappedBy = "qcm", cascade = CascadeType.ALL)
     private Set<Question> questions = new HashSet<>();
 
 }
